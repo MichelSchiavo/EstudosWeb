@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type:none;
+}
+
+body {
+    background-color: rgba(0, 0, 0, .8);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(192,192,192, .15);
+    padding: 30px;
+    text-align: end;
+    border-bottom: 1px solid rgba(221,160,221, .4);
+    height: 25px;
+}
+
+header #logoHeader img {
+    max-width: 35px;
+    border-radius: 50%;
+}
+
+header div a {
+    color: white;
+    padding: 30px;
+    transition: all 1s;
+}
+
+header div a:hover {
+    color: rgba(221,160,221, .4);
+    transition: all 1s;
+}
+
+/*Página SOBRE*/
+
+main#imagemLogo img {
+    margin: 50px 0;
+    border-radius: 50%;
+    border: 5px solid black;
+    max-width: 30%;
+}
+
+main#imagemLogo p {
+    margin: 25px 0;
+}
+
+#empresaName {
+    font-weight: 700;
+    font-size: 3rem;
+    opacity: .5;
+}
+
+main#imagemLogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 150px 200px 0;    
+    color:white;
+    opacity: .7;
+    padding: 10px 50px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    box-shadow: -2px -2px 5px rgba(221,160,221, 1),
+                3px 3px 5px rgba(255, 255, 255, .1);
+    border-radius: 70px;
+}
+
+#letraDiferente {
+    padding-top: 150px;
+    font-size: 1.2rem;
+}
+
+div#lista {
+    margin-top: 195px;
+}
+
+li {
+    display: inline;
+    padding: 12px;
+    color: rgb(147,112,219);
+    opacity: .6;
+}
+
+main#imagemLogo div {
+    text-align: center;
+    padding: 0 5px 5px 5px;
+}
+
+footer#links {
+    padding-top: 33px;
+}
+
+footer#links a,
+li a {
+    color: rgba(221,160,221,1);
+    margin: 0 8px;
+    font-weight: 700;
+    opacity: .6;
+    transition: all 1s;
+}
+
+footer#links a:hover {
+    opacity: 1;
+    transition: all 1s;
+}
