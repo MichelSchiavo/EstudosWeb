@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type:none;
+}
+
+:root {
+    --color-base: rgba(221,160,221,.4);
+    --color-rocketSeat: rgb(147,112,219);
+}
+
+body {
+    background-color: rgba(0, 0, 0, .85);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(192,192,192,.05);
+    padding: 25px;
+    text-align: end;
+    border-bottom: 1px solid var(--color-base);
+    align-items: center;
+}
+
+header #logoHeader img {
+    max-width: 45px;
+    border-radius: 50%;
+}
+
+header div a {
+    color: white;
+    padding: 30px 15px;
+    transition: color 300ms;
+}
+
+header div a:hover,
+#headerSelecionado {
+    color: var(--color-base);
+    transition: color 300ms;
+}
+
+/*Página ABOUT*/
+
+main#centro-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 4%;
+    margin: 5%;
+    color:white;
+    opacity: .7;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: -2px -2px 5px rgba(221,160,221,.2),
+                3px 3px 5px rgba(255, 255, 255,.2);
+    border-radius: 20px;
+}
+
+main#centro-about div.divCentralAbout {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#divCentralAbout {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 3fr;    
+}
+
+#empresaName {
+    font-weight: 700;
+    font-size: 3rem;
+    opacity: .5;
+    text-shadow: 5px 1px 5px var(--color-rocketSeat);
+}
+
+main#centro-about img {
+    margin: 50px 0;
+    border-radius: 50%;
+    border: 5px solid black;
+    max-width: 30%;
+}
+
+main#centro-about p {
+    margin: 25px 0;
+}
+
+#letraDiferente {
+   
+    font-size: 1.3rem;
+}
+
+div div#lista {
+    margin-top: 250px;
+}
+
+div div#lista li {
+    display: inline;
+    padding: 12px;
+    color: var(--color-rocketSeat);
+    opacity: .6;
+}
+
+footer#links {
+    padding-top: 33px;
+}
+
+footer#links a,
+#lista li a {
+    color: rgba(221,160,221,1);
+    margin: 0 8px;
+    font-weight: 700;
+    opacity: .6;
+    transition: all 1s;
+}
+
+footer#links a:hover,
+#lista li a:hover {
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* Página CONTENT*/
+
+#contentMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 100px 250px;
+    gap: 30px;    
+}
+
+#contentMain div {
+    box-shadow: -2px -2px 5px rgba(255, 255, 255,.2),
+                3px 3px 5px rgba(221,160,221,.2);
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.1);
+    padding: 120px 0;
+    color: white;
+    transition: linear 400ms;
+}
+
+#contentMain div:hover {
+    box-shadow: -2px -2px 5px rgba(221,160,221,.2),
+                3px 3px 5px rgba(255, 255, 255,.2);
+    transition: linear 400ms;
+}
+
+#contentMain div p {
+    margin-top: 20px;
+    padding-top: 15px;
+    opacity: 0.8;
+}
+
+#starter p.p {
+    color: #696599;
+    filter: brightness(170%);
+}
+
+#launchbase p.p {
+    color: #ED9121;
+    filter: brightness(120%);
+}
+
+#gostack p.p {
+    color: #00ff7f;
+}
+
+#contentMain div h2 {
+    font-size: 1.7rem;
+    margin: 0 0 30px;
+}
+
+#contentMain div footer {
+    margin-top: 25px;
+}
+
+
+/* MODAL */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;/*Vai fazer com que o position absolute abaixo respeite o espaço do pai*/
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 0;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* Modal ACTIVE*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transition: all 500ms;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+/* 404 */
+
+div#quatrocentosEQuatro {
+    text-align: center;
+    margin-top: 15%;
+    color: white;
+    font-size: 5rem;
+}
