@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type :none;
+}
+
+:root {
+    --color-base: rgba(221,160,221,.4);
+    --color-rocketSeat: rgb(147,112,219);
+    --opacidade: 0.7;
+}
+
+body {
+    background-color: rgba(0, 0, 0, .85);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(192,192,192,.05);
+    padding: 25px;
+    text-align: end;
+    border-bottom: 1px solid var(--color-base);
+    align-items: center;
+}
+
+header #logoHeader img {
+    max-width: 45px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #dadada;
+    box-shadow: 0 0 10px #696599;
+}
+
+header div a {
+    color: white;
+    padding: 30px 15px;
+    transition: color 300ms;
+}
+
+header div a:hover,
+#headerSelecionado {
+    color: var(--color-base);
+    transition: color 300ms;
+}
+
+/*Página ABOUT*/
+
+main#centro-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 4%;
+    margin: 5%;
+    color:white;
+    opacity: var(--opacidade);
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: -2px -2px 5px rgba(221,160,221,.2),
+                3px 3px 5px rgba(255, 255, 255,.2);
+    border-radius: 20px;
+}
+
+main#centro-about div.divCentralAbout {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#divCentralAbout {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 3fr;    
+}
+
+#empresaName {
+    font-weight: 700;
+    font-size: 3rem;
+    opacity: var(--opacidade);
+    text-shadow: 5px 1px 5px var(--color-rocketSeat);
+}
+
+main#centro-about img {
+    margin: 50px 0;
+    border-radius: 50%;
+    border: 5px solid black;
+    max-width: 30%;
+}
+
+main#centro-about p {
+    margin: 25px 0;
+}
+
+#letraDiferente {
+   
+    font-size: 1.3rem;
+}
+
+div div#lista {
+    margin-top: 250px;
+}
+
+div div#lista li {
+    display: inline;
+    padding: 12px;
+    color: var(--color-rocketSeat);
+    opacity: .6;
+}
+
+footer#links {
+    padding-top: 33px;
+}
+
+footer#links a,
+#lista li a {
+    color: rgba(221,160,221,1);
+    margin: 0 8px;
+    font-weight: 700;
+    opacity: .6;
+    transition: opacity 1s;
+}
+
+footer#links a:hover,
+#lista li a:hover {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+/* Página CONTENT*/
+
+#contentMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 100px 250px;
+    gap: 30px;    
+}
+
+#contentMain div {
+    box-shadow: -2px -2px 5px rgba(255, 255, 255,.2),
+                3px 3px 5px rgba(221,160,221,.2);
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.1);
+    padding: 120px 0;
+    color: white;
+    transition: box-shadow 400ms;
+    cursor: pointer;
+}
+
+#contentMain div:hover {
+    box-shadow: -2px -2px 5px rgba(221,160,221,.2),
+                3px 3px 5px rgba(255, 255, 255,.2);
+    transition: box-shadow 400ms;
+}
+
+#contentMain div p {
+    margin-top: 20px;
+    padding-top: 15px;
+    opacity: var(--opacidade);
+}
+
+#starter p.p {
+    color: #696599;
+    filter: brightness(170%);
+}
+
+#launchbase p.p {
+    color: #ED9121;
+    filter: brightness(120%);
+}
+
+#gostack p.p {
+    color: #00ff7f;
+}
+
+#contentMain div h2 {
+    font-size: 1.7rem;
+    margin: 0 0 30px;
+}
+
+#contentMain div footer {
+    margin-top: 25px;
+}
+
+/* 404 */
+
+div#quatrocentosEQuatro {
+    text-align: center;
+    margin-top: 15%;
+    color: white;
+    font-size: 5rem;
+}
+
+/* COURSES */
+
+.projects {
+    text-align: center;
+    margin: 150px auto 0;
+    padding: 50px;
+    max-width: 500px;
+    width: 300px;
+    max-height: 700px;
+    height: 450px;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255,.2),
+                3px 3px 5px rgba(221,160,221,.2);
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.1);
+    color: white;
+    transition: box-shadow 400ms;
+}
+
+.projects:hover {
+    box-shadow: -2px -2px 5px rgba(221,160,221,.2),
+    3px 3px 5px rgba(255, 255, 255,.2);
+    transition: box-shadow 400ms;
+}
+
+.projects .project_course {
+    margin: 50px 20px 20px;
+    padding: 20px 10px 10px;
+}
+
+.projects .project_course img {
+    margin: 35px 0;
+}
+
+.projects .project_course .project_description {
+    padding: 5px 0;
+    margin: 15px 0;
+}
+
+.projects .project_course .project_description p {
+    opacity: var(--opacidade);
+}
+
+.projects .project_course .link_project {
+    padding: 5px 0;
+    margin: 100px 0 0;
+}
+
+.projects .project_course .link_project a#starter {
+    color: #696599;
+    filter: brightness(170%);
+}
+
+.projects .project_course .link_project a#launchbase {
+    color: #ED9121;
+    filter: brightness(120%);
+}
+
+.projects .project_course .link_project a#gostack {
+    color: #00ff7f;
+}
