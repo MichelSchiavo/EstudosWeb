@@ -1,0 +1,24 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+    <main>
+        <p id="maisAcessadas">
+            Mais acessadas
+        </p>
+        <div id="maisAcessadasItens">
+
+           {% for recipe in recipes %}
+                <div class="card homeMostView">
+                    <img src="{{recipe.image}}" class="pointer" alt="">
+                    <p class="imgTitle">{{recipe.title}}</p>
+                    <p class="imgOwner">{{recipe.author}}</p>
+                {% if recipe.most %}
+                    <div class="mostView">Mais visto</div>
+                {% endif %}
+                </div>
+           {% endfor %}
+
+        </div>
+    </main>
+    <script src="./index.js"></script>
+{% endblock %}

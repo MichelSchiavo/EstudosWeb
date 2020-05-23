@@ -1,0 +1,82 @@
+{% extends 'layout.njk' %}
+
+{% block css %}
+    <link rel="stylesheet" href="../index.css">
+{% endblock %}
+
+{% block content %}
+
+<div id="recipe">
+
+    <img src="{{item.image}}" alt="" class="recipeImage">
+    
+    <div class="recipeTitle">
+        <h1>{{item.title}}</h1>
+        <p>por {{item.author}}</p>
+    </div>
+
+    <div id="recipeToggle">
+
+        <h2>Ingredientes</h2>
+
+        <p>
+        <button class="btn" id='btn1' type="button">
+            Mostrar/ocultar ingredientes
+        </button>
+        </p>
+
+    </div>
+
+    <div id="recipeList">
+        <ul>
+            {% for ingredient in item.ingredients %}
+            <li class="recipeIngredient">{{ingredient}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="preparationToggle">
+
+        <h2>Modo de preparo</h2>
+
+        <p>
+        <button class="btn" id='btn2' type="button">
+            Mostrar/ocultar preparação
+        </button>
+        </p>
+
+    </div>
+
+    <div id="recipePreparation">
+        <ul>
+            {% for preparat in item.preparation %}
+            <li class="recipeIngredient">{{preparat}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="informationToggle">
+
+        <h2>Informações</h2>
+
+        <p>
+        <button class="btn" id='btn3' type="button">
+            Mostrar/ocultar preparação
+        </button>
+        </p>
+
+    </div>
+
+    <div id="recipeInformation">
+        <ul>
+            <li class="recipeIngredient">{{item.information}}</li>
+        </ul>
+    </div>
+
+</div>
+
+{% block js%}
+<script src="../darkMode.js"></script>
+<script src="../recipe.js"></script>
+{% endblock %}
+{% endblock %}

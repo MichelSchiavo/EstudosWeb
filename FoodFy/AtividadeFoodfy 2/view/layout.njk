@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/2829/2829724.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4cc266f988.js" crossorigin="anonymous"></script>
+    <title>FoodFy</title>
+    {% block css %}
+    <link rel="stylesheet" href="index.css">
+    {% endblock %}
+</head>
+<body>
+
+  <div id="tudo">
+
+      <header id="principalHeader">
+
+          <div id="principalLogoTitle">
+            <a href="/">
+              <img src="https://cdn.discordapp.com/attachments/592175533110984732/713243504565944350/logo.png" alt="">
+            </a>  
+          </div>
+
+          <div>
+              {% block links %}
+              <a href="/about" class="linkHeader">Sobre</a>
+              <a href="/recipes" class="linkHeader">Receitas</a>
+              {% endblock %}
+          </div>
+
+          <div>
+              <input class="checkbox" id="checkbox" type="checkbox" name="" id="">
+              <label for="checkbox" class="label">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+              </label>
+          </div>
+
+      </header>
+      
+      {% block content %}
+
+      {% endblock %}
+
+  </div>
+
+<div class="containerFooter"></div>
+<footer>
+  <section class="ft-section">
+    <ul class="ft-section-list">
+      <li>Todos direitos reservados, &copy;Receitas FoodFy</li>
+    </ul>
+  </section>
+</footer>
+{% block js%}
+<script src="darkMode.js"></script>
+{% endblock %}
+</body>
+</html>
